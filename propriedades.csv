@@ -1,0 +1,4 @@
+objectType,name,label,type,fieldType,groupName,description,options
+contact,custom_contact_3,Contato 3,string,text,contactinformation,Texto simples,
+deal,custom_deal_3,Negócio 3,number,number,dealinformation,Valor total,
+ticket,custom_ticket_3,Ticket 3,enumeration,select,ticketinformation,Status atual,aberto|fechado|pendente
