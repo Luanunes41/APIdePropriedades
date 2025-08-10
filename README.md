@@ -1,8 +1,8 @@
 # Criando Propriedades no HubSpot via CSV
 
-Este projeto Node.js permite importar propriedades personalizadas para diferentes objetos (Contatos, Negócios e Tickets) no HubSpot, lendo os dados de um arquivo CSV. Ele utiliza a autenticação via "Private App Access Token" (PAT), que é a abordagem recomendada e mais segura para integração com o HubSpot.
+Este projeto Node.js permite criar propriedades personalizadas para diferentes objetos (Contatos, Negócios e Tickets) no HubSpot, lendo os dados de um arquivo CSV. Ele utiliza a autenticação via "Private App Access Token" , que é a abordagem recomendada e mais segura para integração com o HubSpot.
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 - Importa propriedades personalizadas para:
     - Contatos
@@ -12,7 +12,7 @@ Este projeto Node.js permite importar propriedades personalizadas para diferente
 - Suporta propriedades do tipo "enumeration" (seleção), convertendo as opções de uma string para o formato exigido pelo HubSpot.
 - Utiliza um "Private App Access Token" (PAT) para autenticação segura.
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Node.js**: Ambiente de execução JavaScript.
 - **`dotenv`**: Para carregar variáveis de ambiente de um arquivo `.env`.
@@ -20,7 +20,7 @@ Este projeto Node.js permite importar propriedades personalizadas para diferente
 - **`csv-parser`**: Biblioteca para analisar arquivos CSV.
 - **`axios`**: Cliente HTTP baseado em Promises para fazer requisições à API do HubSpot.
 
-## ⚙️ Pré-requisitos
+## Pré-requisitos
 
 Antes de executar o script, certifique-se de ter o seguinte instalado e configurado:
 
@@ -32,7 +32,7 @@ Antes de executar o script, certifique-se de ter o seguinte instalado e configur
         - `crm.objects.tickets.write` (ou apenas `tickets` se `crm.objects.tickets.write` não estiver disponível para Private Apps).
     - Obtenha o **Access Token** do seu Private App. Ele começará com `pat-`.
 
-## 📦 Instalação
+## Instalação
 
 1.  **Clone este repositório** (ou crie os arquivos na sua máquina):
     ```bash
@@ -46,10 +46,11 @@ Antes de executar o script, certifique-se de ter o seguinte instalado e configur
     npm install dotenv csv-parser axios
     ```
 
-## 🔑 Configuração (Variáveis de Ambiente)
+## Configuração (Variáveis de Ambiente)
 
 Crie um arquivo chamado `.env` na raiz do projeto (no mesmo diretório de `importarPropriedades.js`). Adicione seu Private App Access Token a este arquivo:
 
 ```dotenv
 
 HUBSPOT_API_KEY=seu_private_app_access_token_aqui
+
