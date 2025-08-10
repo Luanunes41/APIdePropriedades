@@ -1,4 +1,4 @@
-# Importador de Propriedades do HubSpot via CSV
+# Criando Propriedades no HubSpot via CSV
 
 Este projeto Node.js permite importar propriedades personalizadas para diferentes objetos (Contatos, Negócios e Tickets) no HubSpot, lendo os dados de um arquivo CSV. Ele utiliza a autenticação via "Private App Access Token" (PAT), que é a abordagem recomendada e mais segura para integração com o HubSpot.
 
@@ -51,4 +51,5 @@ Antes de executar o script, certifique-se de ter o seguinte instalado e configur
 Crie um arquivo chamado `.env` na raiz do projeto (no mesmo diretório de `importarPropriedades.js`). Adicione seu Private App Access Token a este arquivo:
 
 ```dotenv
+
 HUBSPOT_API_KEY=seu_private_app_access_token_aqui
